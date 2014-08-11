@@ -1,0 +1,11 @@
+<%= form_for [@kitten,@categorization] do |f|%>
+    <% @categorization.errors.full_messages.each do |message| %>
+        <div class="errors"><%= message %></div>
+    <% end %>
+
+<%= image_tag @kitten.image, class:"kitten"%>
+    <div class = "category">
+<%= f.collection_select :category_id, Category.order(:name), :id, :name, prompt: "Please choose a category" %>
+<%= f.submit "Add Category", class:"button" %>
+<% end  %>
+</div>

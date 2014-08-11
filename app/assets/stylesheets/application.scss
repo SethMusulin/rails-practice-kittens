@@ -83,4 +83,16 @@ main {
 
 .kitten {
   margin-bottom: 1em;
+  float: left;
+  padding-right: .5em;
+}
+
+.category {
+  display: inline-block;
+}
+
+.button {
+  background: blue;
+  color: white;
+  font-size: .75em;
 }
